@@ -6,6 +6,7 @@
 }
 
 body {
+    /* Coloca o display: flex e o flex-direction: colum e o min-height: 100vh e no footer coloca margin-top: auto para que o footer fique sempre embaixo */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
