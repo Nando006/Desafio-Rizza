@@ -119,7 +119,7 @@ a#botao {
     transition: letter-spacing 0.3s, background-color 0.3s;
 }
 
-footer {
+footer p {
     margin: 20px 0px 0px 0px;
     background-color: rgba(0, 0, 0, 0.47);
     padding: 5px;
