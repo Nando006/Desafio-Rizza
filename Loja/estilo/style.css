@@ -70,6 +70,15 @@ main article section#texto {
     border-radius: 15px 50px 15px 50px; 
 }
 
+section#texto p {
+    text-indent: 20px;
+    text-align: justify;
+    margin: 5px;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-shadow: 0px 0px 2px black;
+}
+
 h1 {
     font-variant: small-caps;
     text-align: center;
@@ -104,15 +113,6 @@ a#botao {
     transition: letter-spacing 0.3s, background-color 0.3s;
 }
 
-section#texto p {
-    text-indent: 20px;
-    text-align: justify;
-    margin: 5px;
-    letter-spacing: 2px;
-    line-height: 1.8em;
-    text-shadow: 0px 0px 2px black;
-}
-
 footer {
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.47);
@@ -133,4 +133,31 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: #ff0000;
+}
+
+@media (max-width: 460px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    section#texto p {
+        letter-spacing: 1px;
+        line-height: 1.6em;
+    }
+}
+
+@media (max-width: 375px) {
+    header img {
+        
+    }
+}
+
+@media (max-width: 344px) {
+    section#texto h1 {
+        font-size: 2.3em;
+    }
+
+    section#texto p {
+        line-height: 1.4em;
+    }
 }
