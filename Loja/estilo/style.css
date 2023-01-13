@@ -18,11 +18,12 @@ body {
 
 header {
     background-color: #FF3D00;
+
 }
 
 header img {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.561);
-    width: 100%;
+    max-width: 100%;
 }
 
 nav {
