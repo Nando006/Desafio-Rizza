@@ -14,7 +14,7 @@ body {
     background: url(../Imagens/bg/bg.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
+    min-height: 100%;
 } 
 
 header {
@@ -120,15 +120,18 @@ a#botao {
     transition: letter-spacing 0.3s, background-color 0.3s;
 }
 
-footer p {
+footer {
     margin: 20px 0px 0px 0px;
     background-color: rgba(0, 0, 0, 0.47);
-    padding: 5px;
     text-align: center;
     color: white;
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 1.1em;
+}
+
+footer p {
+    padding: 5px;
 }
 
 footer a {
