@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../Imagens/bg/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+header {
+    background-color: #FF3D00;
+}
+
+header img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.561);
+    max-width: 100%;
+}
+
+nav {
+    background-color: #FF3D00;
+    padding: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+    padding: 3px;
+    background-color: #811f01;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.603);
+}
+
+nav ul li:hover {
+    background-color:#3d0e00;
+    transition: background-color 1s;
+}
+
+li a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    margin: auto;
+    max-width: 800px;
+    color: white;
+}
+
+main article {
+    padding: 50px 0px 30px 0px;
+    margin: auto;
+    background-color: #ff4f1adf;
+    max-width: 750px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    border-radius: 0px 0px 15px 15px;
+}
+
+main article section#texto {
+    margin: auto;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.424);
+    padding: 30px 20px 10px 20px;
+    background-color: #FF9052;
+    max-width: 500px;
+    height: 230px;
+    border-radius: 15px 50px 15px 50px; 
+}
+
+h1 {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h1#titulo2 {
+    background-image: linear-gradient(45deg, #681800, transparent);
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+a#botao {
+    display: block;
+    padding: 20px;
+    background-color: #FF9052;
+    max-width: 180px;
+    margin: 20px auto 0px auto;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.465);
+    font-style: italic;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
+}
+
+ a#botao:hover {
+    letter-spacing: 5px;
+    background-color: #ff925277;
+    transition: letter-spacing 0.3s, background-color 0.3s;
+}
+
+section#texto p {
+    text-indent: 20px;
+    text-align: justify;
+    margin: 5px;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    text-shadow: 0px 0px 2px black;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.47);
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FF3D00;
+    transition-duration: 0.5s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}
