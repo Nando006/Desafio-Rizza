@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+html, body {
+    height: 100vh;
+    max-width: 100vw;
+}
+
 body {
     background: url(../Imagens/bg/bg.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -17,7 +22,7 @@ header {
 
 header img {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.561);
-    max-width: 100%;
+    width: 100%;
 }
 
 nav {
@@ -114,7 +119,7 @@ a#botao {
 }
 
 footer {
-    margin-top: 20px;
+    margin: 20px 0px 0px 0px;
     background-color: rgba(0, 0, 0, 0.47);
     padding: 5px;
     text-align: center;
