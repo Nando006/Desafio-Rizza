@@ -1,164 +1,284 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    /* Coloca o display: flex e o flex-direction: colum e o min-height: 100vh e no footer coloca margin-top: auto para que o footer fique sempre embaixo */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: url(../Imagens/bg/bg.jpg) no-repeat top center fixed;
+
+    background: #0E0E0E url(../Imagens/fundo/fundo2.jpg) no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-} 
+}
+
+div#fundo {
+    background-color: #d800f92e;
+    min-height: 100vh;
+}
 
 header {
-    background-color: #FF3D00;
+    background-color: #0e0e0edf;
     text-align: center;
 }
 
 header img {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.561);
     max-width: 100%;
 }
 
 nav {
-    background-color: #FF3D00;
-    padding: 5px;
+    margin: 20px auto;
+    background-color: #0E0E0E;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 5px rgba(205, 0, 241, 0.864);
+    text-align: center;
 }
 
-nav ul li {
+nav li {
     display: inline-block;
-    margin-right: 50px;
-    padding: 3px;
-    background-color: #811f01;
-    border-radius: 10px;
-    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.603);
+    list-style: none;
+    margin: 5px 10px;
 }
 
-nav ul li:hover {
-    background-color:#3d0e00;
-    transition: background-color 1s;
-}
-
-li a {
-    font-size: 0.8em;
-    text-decoration: none;
+nav a {
     color: white;
+    text-shadow: 0px 0px 1px black;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
-    color: white;
+    background-color: #0E0E0E;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.608);
+    padding: 10px 0px;
 }
 
 main article {
-    padding: 50px 0px 30px 0px;
-    margin: auto;
-    background-color: #ff4f1adf;
+    background: #1a1a1a url() no-repeat center center fixed;
+    margin: 10px auto 20px auto;
+    background-size: cover;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.655);
+    border-radius: 8px;
     max-width: 800px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
-    border-radius: 0px 0px 15px 15px;
+    transition-duration: 1s;
 }
 
-main article section#texto {
-    margin: auto;
-    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.424);
-    padding: 30px 20px 10px 20px;
-    background-color: #FF9052;
-    max-width: 500px;
-    height: 230px;
-    border-radius: 15px 50px 15px 50px; 
+main article:hover {
+    box-shadow: 0px 0px 20px rgba(229, 0, 237, 0.655);
+    transition: 1s;
 }
 
-section#texto p {
-    text-indent: 20px;
-    text-align: justify;
-    margin: 5px;
-    letter-spacing: 2px;
-    line-height: 1.8em;
-    text-shadow: 0px 0px 2px black;
+div#fundo2, div#fundo3 {
+    margin: 10px auto 20px auto;
+    padding: 50px;
+    border-radius: 8px;
 }
 
-h1 {
-    font-variant: small-caps;
-    text-align: center;
-    font-size: 2.5em;
-}
 
-section#produtos {
+
+main article section.produtosamostra {
+    background-color: #0E0E0E;
+    max-width: 350px;
+    min-height: 300px;
+    margin: 0px 20px 30px 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.581);
+    border-radius: 40px;
+    padding: 10px;
     text-align: center;
 }
 
-h1#titulo2 {
-    background-image: linear-gradient(45deg, #681800, transparent);
-    margin: 50px 0px 50px 0px;
-    font-size: 2em;
+main img, main a {
+    display: inline-flex;
+    margin-top: 10px;
 }
 
-a#botao {
-    padding: 20px;
-    background-color: #FF9052;
-    max-width: 180px;
-    border-radius: 50px;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.465);
-    font-style: italic;
-    font-size: 1.5em;
+main a {
     color: white;
     text-decoration: none;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.537);
-}
-
- a#botao:hover {
-    letter-spacing: 5px;
-    background-color: #ff925277;
-    transition: letter-spacing 0.3s, background-color 0.3s;
-}
-
-footer {
-    margin-top: auto;
-}
-
-footer p  {
-    margin: 20px 0px 0px 0px;
-    background-color: rgba(0, 0, 0, 0.47);
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 1.1em;
-    padding: 5px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #FF3D00;
+    background-color: rgb(153, 0, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.437);
+    box-sizing: border-box;
     transition-duration: 0.5s;
 }
 
-footer a:hover {
+main a:hover {
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+main div#prateleira1, main div#prateleira2 {
+    display: flex;
+}
+
+main article#info {
+    max-width: 100vw;
+}
+
+main section.texto {
+    margin: auto;
+    background-color: #0E0E0E;
+    max-width: 700px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.539);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+main section h1 {
+    text-align: center;
+    color: rgb(164, 0, 252);
+    font-size: 3.5em;
+    font-variant: small-caps;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+}
+
+main section p {
+    color: rgb(248, 248, 248);
+    font-style: normal;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    line-height: 2em;
+}
+
+main aside {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+main aside h1 {
+    font-family: 'Courier New', monospace;
+    color: yellow;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+}
+
+main aside p {
+    margin: 10px 0px 20px 0px;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+main aside img {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.657);
+    width: 100px;
+    border-radius: 50%;
+    transition-duration: 1s;
+}
+
+main aside img:hover {
+    width: 310px;
+    transition: 1s;
+}
+
+footer {
+    background-color: rgb(0, 136, 131);
+    height: 200px;
+    margin-top: auto;
+    box-shadow: inset 5px 5px 50px rgba(0, 0, 0, 0.807);
+    padding: 20px 0px 0px 2px;
+}
+
+footer:hover {
+    box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.807);
+    transition: 1s;
+} 
+
+footer div {
+    max-width: 500px;
+    margin: auto;
+    text-align: center
+}
+
+footer ul {
+    columns: 2;
+}
+
+footer ul a, footer li {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px black;
+    list-style: none;
+    line-height: 2.1em;
+}
+
+footer ul a:hover {
     text-decoration: underline;
-    color: #ff0000;
 }
 
-@media (max-width: 460px) {
-    nav ul li {
-        margin-right: 10px;
-    }
+footer p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    font-style: italic;
+    font-family:'Courier New', Courier, monospace;
+}
 
-    section#texto p {
-        letter-spacing: 1px;
-        line-height: 1.6em;
+footer p a {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.52);
+    transition-duration: 1s;
+}
+
+footer p a:hover {
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.665);
+    letter-spacing: 8px;
+    transition: 1s;
+}
+
+@media (max-width: 727px) {
+    main article section.produtosamostra {
+        margin: 0px auto 30px auto;
+    }
+    main div#prateleira1, main div#prateleira2 {
+        display: block;
     }
 }
-@media (max-width: 344px) {
-    section#texto h1 {
-        font-size: 2.3em;
+
+@media (max-width: 500px) {
+    main article {
+        margin: 0;
     }
 
-    section#texto p {
-        line-height: 1.4em;
+    main article#info h1 {
+        letter-spacing: 1.5px;
+        font-size: 3.5em;
+    }
+    main section.texto {
+        padding: 5px;
+    }
+
+    main div#fundo3 {
+        padding: 50px 0px;
+    }
+}
+
+@media (max-width: 390px) {
+    main img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 340px) {
+    main article#info h1 {
+        font-size: 3em;
     }
 }
